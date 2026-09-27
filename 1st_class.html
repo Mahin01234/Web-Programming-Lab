@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML tags reference example">
+    <meta name="keywords" content="HTML, tags, tutorial">
+    <title>HTML Tags Reference</title>
+</head>
+<body>
+
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <header>
+        <h1>HTML Tags Guide</h1>
+        <nav>
+            <a href="#text">Text</a> |
+            <a href="#lists">Lists</a> |
+            <a href="#links">Links</a> |
+            <a href="#table">Tables</a> |
+            <a href="#media">Media</a> |
+            <a href="#semantic">Semantic</a> |
+            <a href="#form">Forms</a> |
+            <a href="#attributes">Attributes</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- ========== 1. TEXT & HEADINGS ========== -->
+        <section id="text">
+            <h2>1. Text &amp; Headings</h2>
+
+            <h3>Sub-section Heading</h3>
+            <h4>Minor Heading</h4>
+            <h5>Small Heading</h5>
+            <h6>Smallest Heading</h6>
+
+            <p>This is a <strong>paragraph</strong>. Here we have <em>emphasized</em> text and <mark>highlighted</mark> text.</p>
+            <p>To break a line, use the <br> br tag.</p>
+            <hr>
+            <p>The line above is a horizontal rule (hr).</p>
+
+            <p>This is a <span>span</span> inside a paragraph.</p>
+
+            <p>Use the <code>&lt;p&gt;</code> tag to create a paragraph.</p>
+        </section>
+
+        <hr>
+
+        <!-- ========== 2. LISTS ========== -->
+        <section id="lists">
+            <h2>2. Lists</h2>
+
+            <h3>Unordered List (ul)</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered List (ol)</h3>
+            <ol>
+                <li>Learn</li>
+                <li>Practice</li>
+                <li>Build</li>
+            </ol>
+
+            <h3>Description List (dl)</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Builds structure</dd>
+                <dt>CSS</dt>
+                <dd>Handles styling</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- ========== 3. LINKS & IMAGES ========== -->
+        <section id="links">
+            <h2>3. Links &amp; Images</h2>
+
+            <p>
+                <a href="https://developer.mozilla.org" target="_blank" rel="noopener" title="MDN Documentation">
+                    Visit MDN Web Docs
+                </a>
+            </p>
+
+            <p>
+                <a href="#form">Jump to Forms section</a>
+            </p>
+
+            <img src="https://via.placeholder.com/400x200"
+                 alt="A sample image"
+                 width="400"
+                 title="Sample Image">
+        </section>
+
+        <hr>
+
+        <!-- ========== 4. TABLES ========== -->
+        <section id="table">
+            <h2>4. Tables</h2>
+
+            <table border="1">
+                <caption>Weekly Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>JavaScript</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ========== 5. MEDIA ========== -->
+        <section id="media">
+            <h2>5. Media</h2>
+
+            <h3>Video</h3>
+            <video width="320" controls muted>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+
+            <h3>Iframe</h3>
+            <iframe src="https://example.com" width="300" height="150" title="Sample Iframe"></iframe>
+
+            <h3>Figure</h3>
+            <figure>
+                <img src="https://via.placeholder.com/200" alt="Figure image">
+                <figcaption>This is a figure caption</figcaption>
+            </figure>
+
+            <h3>Picture (Responsive)</h3>
+            <picture>
+                <source srcset="https://via.placeholder.com/300.webp" type="image/webp">
+                <img src="https://via.placeholder.com/300" alt="Responsive image">
+            </picture>
+        </section>
+
+        <hr>
+
+        <!-- ========== 6. SEMANTIC HTML ========== -->
+        <section id="semantic">
+            <h2>6. Semantic HTML</h2>
+
+            <article>
+                <h3>Independent Article</h3>
+                <p>This is a self-contained content block.</p>
+            </article>
+
+            <aside>
+                <p>This is side content (aside).</p>
+            </aside>
+        </section>
+
+        <hr>
+
+        <!-- ========== 7. FORMS ========== -->
+        <section id="form">
+            <h2>7. Forms</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" name="password">
+                <br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="100">
+                <br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="subscribe"> Subscribe to newsletter
+                </label>
+                <br><br>
+
+                <p>Gender:</p>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <br><br>
+
+                <label for="file">Upload File:</label><br>
+                <input type="file" id="file" name="file">
+                <br><br>
+
+                <label for="msg">Message:</label><br>
+                <textarea id="msg" name="message" rows="4" cols="30"></textarea>
+                <br><br>
+
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+                    <option value="bd">Bangladesh</option>
+                    <option value="in">India</option>
+                    <option value="us">United States</option>
+                </select>
+                <br><br>
+
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ========== 8. ATTRIBUTES EXAMPLE ========== -->
+        <section id="attributes">
+            <h2>8. Attributes Example</h2>
+
+            <p id="unique-id" class="highlight" style="color: blue;" title="Tooltip text" data-role="demo">
+                This paragraph has <code>id</code>, <code>class</code>, <code>style</code>, <code>title</code>, and <code>data-*</code> attributes.
+            </p>
+
+            <p lang="en">This text is in English.</p>
+            
+        </section>
+
+    </main>
+
+</body>
+</html>

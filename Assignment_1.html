@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahinur Rahman Mahin - Academic Portfolio</title>
+    
+    <!-- Minimal Internal CSS for basic readability (as allowed) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: darkblue;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form label {
+            font-weight: bold;
+        }
+        input, textarea {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 100%;
+            max-width: 400px;
+            display: block;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            display: inline;
+            width: auto;
+            margin-right: 5px;
+        }
+        button {
+            padding: 8px 15px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        aside {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <header>
+        <h1>Mahinur Rahman Mahin</h1>
+        <p><em>Computer Science Student & Aspiring Web Developer</em></p>
+        
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education & Skills</a>
+            <a href="#schedule">Course Schedule</a>
+            <a href="#resources">Favorite Resources</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+
+        <!-- Section 1: About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am <strong>Mahinur Rahman Mahin</strong>, a sophomore majoring in <em>Computer Science</em>. 
+                I am deeply passionate about <mark>web development</mark> and building accessible digital experiences.
+            </p>
+            <p>
+                My journey began with simple HTML pages and has grown into a love for full-stack engineering.<br>
+                I enjoy solving complex algorithmic problems and contributing to open-source projects.
+            </p>
+            <hr>
+        </section>
+
+        <!-- Section 2: Education & Skills -->
+        <section id="education">
+            <h2>Education & Skills</h2>
+            
+            <h3>Academic Milestones (Ordered List)</h3>
+            <ol>
+                <li>B.S. in Computer Science - University of Technology (Expected 2028)</li>
+                <li>High School Diploma - Central High School (2024)</li>
+                <li>Introduction to Programming Certificate - Online Academy (2023)</li>
+            </ol>
+
+            <h3>Technical Skills (Unordered List)</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+            </ul>
+            <hr>
+        </section>
+
+        <!-- Section 3: Course Schedule -->
+        <section id="schedule">
+            <h2>Course Schedule</h2>
+            <table>
+                <caption>Fall 2026 Course Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Data Structures</td>
+                        <td>10:00 AM - 11:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Web Development</td>
+                        <td>1:00 PM - 2:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Algorithms</td>
+                        <td>10:00 AM - 11:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Database Systems</td>
+                        <td>3:00 PM - 4:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Discrete Mathematics</td>
+                        <td>9:00 AM - 10:30 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </section>
+
+        <!-- Section 4: Favorite Resources -->
+        <section id="resources">
+            <h2>Favorite Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            
+            <img src="https://placehold.co/300x200" alt="A placeholder image representing study resources" width="300">
+            <hr>
+        </section>
+
+        <!-- Aside: Semantic Landmark (Required by prompt) -->
+        <aside>
+            <h3>Quick Tip</h3>
+            <p>Always validate your HTML using the W3C Validator before submitting your projects!</p>
+        </aside>
+        <hr>
+
+        <!-- Section 5: Contact Me -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+
+                <p>Preferred Contact Method:</p>
+                <label><input type="radio" name="contact_method" value="email" checked> Email</label><br>
+                <label><input type="radio" name="contact_method" value="phone"> Phone</label><br><br>
+
+                <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to my newsletter</label><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <hr>
+        <p><strong>Student ID:</strong> 242014165 | <strong>Submission Date:</strong> October 26, 2026</p>
+        <p>&copy; 2026 Mahinur Rahman Mahin. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

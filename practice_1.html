@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A complete HTML tag reference and learning portfolio covering beginner to advanced topics.">
+    <meta name="keywords" content="HTML, Web Development, Semantic HTML, Forms, Tables, Media">
+    <title>HTML Tag Reference &amp; Learning Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #222;
+        }
+
+        header, nav, main, section, aside, footer {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 12px;
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        table, th, td {
+            border: 1px solid #444;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .inline-box {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        form label {
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        input, textarea, select, button {
+            margin-top: 4px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER + NAV ================= -->
+    <header id="top">
+        <h1>HTML Tag Reference &amp; Learning Portfolio</h1>
+        <p><em>From Beginner to Advanced — a complete hands-on reference</em></p>
+
+        <nav>
+            <a href="#structure">Structure</a> |
+            <a href="#text">Text &amp; Headings</a> |
+            <a href="#lists">Lists</a> |
+            <a href="#links-images">Links &amp; Images</a> |
+            <a href="#tables">Tables</a> |
+            <a href="#semantic">Semantic HTML</a> |
+            <a href="#attributes">Attributes</a> |
+            <a href="#block-inline">Block vs Inline</a> |
+            <a href="#forms">Forms</a> |
+            <a href="#media">Media</a> |
+            <a href="#best-practices">Best Practices</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <!-- ================= 1. STRUCTURE ================= -->
+        <section id="structure">
+            <h2>1. Document Structure</h2>
+            <p>
+                Every HTML5 document starts with <mark>&lt;!DOCTYPE html&gt;</mark>.
+                The <code>&lt;html&gt;</code> element wraps everything, containing
+                <code>&lt;head&gt;</code> (metadata) and <code>&lt;body&gt;</code> (visible content).
+            </p>
+
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Content goes here
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+
+        <hr>
+
+        <!-- ================= 2. TEXT & HEADINGS ================= -->
+        <section id="text">
+            <h2>2. Headings &amp; Text Formatting</h2>
+
+            <h3>Heading Levels</h3>
+            <h1>h1 — Main Page Title</h1>
+            <h2>h2 — Section Heading</h2>
+            <h3>h3 — Sub-section</h3>
+            <h4>h4 — Minor Heading</h4>
+            <h5>h5 — Small Heading</h5>
+            <h6>h6 — Smallest Heading</h6>
+
+            <h3>Text Formatting Tags</h3>
+            <p>This is a normal paragraph. It describes a block of text.</p>
+            <p>This is <strong>strong (important)</strong> text.</p>
+            <p>This is <em>emphasized</em> text.</p>
+            <p>This is <mark>highlighted</mark> text.</p>
+            <p>This is <code>inline code</code> text.</p>
+            <p>This is <span class="inline-box">a span (inline)</span> element.</p>
+            <p>Line one.<br>Line two after a &lt;br&gt; line break.</p>
+            <hr>
+            <p>Above this paragraph is a horizontal rule (&lt;hr&gt;).</p>
+        </section>
+
+        <hr>
+
+        <!-- ================= 3. LISTS ================= -->
+        <section id="lists">
+            <h2>3. Lists</h2>
+
+            <h3>Unordered List (&lt;ul&gt;) — Bullets, order does not matter</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered List (&lt;ol&gt;) — Numbers, sequence matters</h3>
+            <ol>
+                <li>Learn HTML</li>
+                <li>Practice daily</li>
+                <li>Build small projects</li>
+            </ol>
+
+            <h3>Description List (&lt;dl&gt;) — Term + Definition</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Structure of a web page.</dd>
+
+                <dt>CSS</dt>
+                <dd>Style and layout of a web page.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Interactivity and behavior of a web page.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- ================= 4. LINKS & IMAGES ================= -->
+        <section id="links-images">
+            <h2>4. Links &amp; Images</h2>
+
+            <h3>Hyperlinks (&lt;a&gt;)</h3>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/" target="_blank" rel="noopener" title="MDN Web Docs">
+                        MDN Web Docs (opens in new tab)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/" target="_blank" rel="noopener" title="W3Schools">
+                        W3Schools (opens in new tab)
+                    </a>
+                </li>
+                <li>
+                    <a href="#top">Back to top (internal anchor link)</a>
+                </li>
+            </ul>
+
+            <h3>Images (&lt;img&gt;)</h3>
+            <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop"
+                alt="Colorful programming code displayed on a computer screen"
+                width="600"
+                height="300"
+                title="Programming code"
+            >
+        </section>
+
+        <hr>
+
+        <!-- ================= 5. TABLES ================= -->
+        <section id="tables">
+            <h2>5. Tables</h2>
+
+            <table>
+                <caption>Weekly Course Schedule</caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Database Systems</td>
+                        <td>10:00 AM – 12:00 PM</td>
+                        <td>Lecture</td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Object-Oriented Programming</td>
+                        <td>11:00 AM – 1:00 PM</td>
+                        <td>Lecture</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Web Development</td>
+                        <td>2:00 PM – 4:00 PM</td>
+                        <td>Practical Class</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Computer Architecture</td>
+                        <td>9:00 AM – 11:00 AM</td>
+                        <td>Lecture</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Data Structures</td>
+                        <td>10:00 AM – 12:00 PM</td>
+                        <td>Lecture</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ================= 6. SEMANTIC HTML ================= -->
+        <section id="semantic">
+            <h2>6. Semantic HTML</h2>
+            <p>
+                Semantic tags describe the <strong>meaning</strong> of content, improving
+                accessibility, SEO and maintainability.
+            </p>
+
+            <ul>
+                <li><code>&lt;header&gt;</code> — Intro / navigation area</li>
+                <li><code>&lt;nav&gt;</code> — Navigation links</li>
+                <li><code>&lt;main&gt;</code> — Main unique content</li>
+                <li><code>&lt;section&gt;</code> — Thematic grouping</li>
+                <li><code>&lt;article&gt;</code> — Independent, self-contained content</li>
+                <li><code>&lt;aside&gt;</code> — Side content related to main content</li>
+                <li><code>&lt;footer&gt;</code> — Footer for a page or section</li>
+                <li><code>&lt;figure&gt;</code> — Self-contained media with optional caption</li>
+            </ul>
+
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=300&fit=crop"
+                    alt="A laptop screen showing programming code in an editor"
+                    width="600"
+                    height="300"
+                >
+                <figcaption>Figure: Learning HTML in a code editor.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- ================= 7. ATTRIBUTES ================= -->
+        <section id="attributes">
+            <h2>7. Attributes</h2>
+            <p>Attributes provide extra information inside the opening tag: <code>name="value"</code></p>
+
+            <table>
+                <caption>Common HTML Attributes</caption>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>id</td><td>Unique identifier (one per page)</td></tr>
+                    <tr><td>class</td><td>Group name for styling/scripting</td></tr>
+                    <tr><td>style</td><td>Inline CSS (use sparingly)</td></tr>
+                    <tr><td>lang</td><td>Language of the element content</td></tr>
+                    <tr><td>title</td><td>Tooltip text on hover</td></tr>
+                    <tr><td>data-*</td><td>Custom data attributes for JavaScript</td></tr>
+                </tbody>
+            </table>
+
+            <p title="This is a tooltip!">Hover over this text to see a tooltip (title attribute).</p>
+        </section>
+
+        <hr>
+
+        <!-- ================= 8. BLOCK VS INLINE ================= -->
+        <section id="block-inline">
+            <h2>8. Block-level vs Inline Elements</h2>
+
+            <h3>Block-level Elements</h3>
+            <p>They start on a new line, take full width, and can contain other blocks.</p>
+            <div style="background:#e8f4ff; padding:8px;">This is a &lt;div&gt; — block-level.</div>
+            <p style="background:#e8f4ff; padding:8px;">This is a &lt;p&gt; — block-level.</p>
+
+            <h3>Inline Elements</h3>
+            <p>They flow inside a line, take only as much width as needed, and cannot contain blocks.</p>
+            <p>
+                This is a
+                <span style="background:#ffe8e8;">&lt;span&gt;</span>,
+                <a href="#top" style="background:#ffe8e8;">&lt;a&gt;</a>,
+                <strong style="background:#ffe8e8;">&lt;strong&gt;</strong>,
+                <em style="background:#ffe8e8;">&lt;em&gt;</em> —
+                all inline.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ================= 9. FORMS ================= -->
+        <section id="forms">
+            <h2>9. Forms</h2>
+            <p>Forms collect user input using <code>&lt;form&gt;</code> and various controls.</p>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+                <br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="120">
+                <br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+                <br><br>
+
+                <label for="course">Select Course:</label><br>
+                <select id="course" name="course">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+                <br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message..."></textarea>
+                <br><br>
+
+                <p><strong>Preferred Contact Method:</strong></p>
+                <input type="radio" id="contact-email" name="contact" value="email">
+                <label for="contact-email">Email</label>
+
+                <input type="radio" id="contact-phone" name="contact" value="phone">
+                <label for="contact-phone">Phone</label>
+                <br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to updates</label>
+                <br><br>
+
+                <label for="file">Upload a file:</label>
+                <input type="file" id="file" name="file">
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ================= 10. MEDIA ================= -->
+        <section id="media">
+            <h2>10. Audio, Video &amp; Other Media</h2>
+
+            <h3>Audio (&lt;audio&gt;)</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video (&lt;video&gt;)</h3>
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+            <h3>Iframe (&lt;iframe&gt;)</h3>
+            <iframe
+                src="https://www.example.com"
+                width="400"
+                height="200"
+                title="Example embedded page">
+            </iframe>
+        </section>
+
+        <hr>
+
+        <!-- ================= 11. BEST PRACTICES ================= -->
+        <section id="best-practices">
+            <h2>11. Best Practices &amp; Common Mistakes</h2>
+
+            <h3>Best Practices ✅</h3>
+            <ol>
+                <li>Always declare <code>&lt;!DOCTYPE html&gt;</code></li>
+                <li>Use lowercase tag names</li>
+                <li>Quote all attribute values</li>
+                <li>Provide <code>alt</code> text for every image</li>
+                <li>Prefer semantic tags over <code>&lt;div&gt;</code></li>
+                <li>Close tags and nest properly</li>
+                <li>Keep structure clean and indented</li>
+                <li>Validate HTML at validator.w3.org</li>
+            </ol>
+
+            <h3>Common Mistakes ❌</h3>
+            <ul>
+                <li>Missing DOCTYPE</li>
+                <li>Unclosed tags</li>
+                <li>Wrong nesting (blocks inside <code>&lt;p&gt;</code>)</li>
+                <li>No <code>alt</code> on images</li>
+                <li>Using <code>&lt;b&gt;</code>/<code>&lt;i&gt;</code> instead of <code>&lt;strong&gt;</code>/<code>&lt;em&gt;</code></li>
+                <li>Inline styles everywhere</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ================= ASIDE ================= -->
+    <aside>
+        <h2>Quick Tip</h2>
+        <p>
+            Type the tags yourself instead of copy-pasting — muscle memory comes from writing.
+            Open the page in a browser often (Save → Refresh) and use DevTools (F12) to inspect the DOM.
+        </p>
+    </aside>
+
+    <hr>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p><strong>Student ID:</strong> 242014165</p>
+        <p><strong>Submission Date:</strong> September 29, 2026</p>
+        <p>&copy; 2026 Mahinur Rahman Mahin. All rights reserved.</p>
+        <p>
+            References:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs</a> |
+            <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">W3Schools</a> |
+            <a href="https://validator.w3.org/" target="_blank" rel="noopener">HTML Validator</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

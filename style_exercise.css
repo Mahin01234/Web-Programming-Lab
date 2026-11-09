@@ -1,0 +1,301 @@
+body{
+    /*
+        1. set the margin and padding properties to 0px
+        2. set image11.jpg as background image with no-repetition, make sure the image doesn't scroll with the scroll-bar
+        3. set the image size to 100% 100%
+    */
+
+    margin: 0px;
+    padding: 0px;
+    background-image: url("image11.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#brand{
+    height: 50px;
+    background-color: rgba(242, 242, 242, 0.8);
+    position: sticky;
+    top:0px;
+    z-index: +999;
+}
+
+#searchbox{
+    float:right;
+    padding: 15px;
+}
+
+#search{
+    outline:none;
+    /*
+        1. set the left, right, top border to none
+        2. set the bottom border to 2px solid and the hexa value of border color is #eeadff
+    */
+
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #eeadff;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#search-btn{
+    border: none;
+    color: #33adff;
+    background-color: rgba(255, 128, 0, 0);
+}
+
+#search-btn:hover{
+    /*
+        1. when you move your mouse above the search button, change the font-color to black and background-color to #33adff
+    */
+    color: black;
+    background-color: #33adff;
+}
+
+#adv{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+#adv img{
+    width: 100%; 
+    height: 400px;
+    position:absolute;
+}
+
+#menubar-list{
+    /*Sticky To Stick The Navigation Bar After Scroll*/
+
+   /*
+        1. show the list items in such a way that there will be no list item icons i.e. not circle/disk/numbers
+        2. set the margin and padding to 0px
+        3. set the background color to rgba(140,140,140, 0.7)
+        4. make sure if overflow occurs then the overflow section will be hidden
+        5. set the z-index property to +999 so that this menubar remains top of other elements
+        6. set the position and top properties in such a way that the menu bar gets fixed when it's position is 50px from the top. Otherwise it will scroll.
+    */
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(140,140,140, 0.7);
+    overflow: hidden;
+    z-index: +999;
+    position: sticky;
+    top: 50px;
+}
+
+#menubar-list li{
+    /*
+        1. make sure the list items float to the left always
+    */
+    float: left;
+}
+
+/* Select non-active links when mouse is hovering */
+#menubar-list li a:not(.active):hover{
+    background-color: #33adff;
+    color: floralwhite;
+}
+
+#menubar-list li a{
+    font-weight: 1800;
+    color: #33adff;
+    /*
+        1. set the display properties to block
+        2. make sure there will be no underline when mouse is on this link element
+        3. set the text-align properties to center
+        4. increase the font-size to 10%
+        5. set the padding of all sides to 15px
+    */
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 110%;
+    padding: 15px;
+}
+
+#menubar-list li a:hover{
+    color: floralwhite;
+}
+
+#menubar-list li a.active{
+    /*
+        1. set the background-color to #33adff
+        2. set the color to floralwhite
+    */
+    background-color: #33adff;
+    color: floralwhite;
+}
+
+#prod-sec{
+    background-color: #ffffff;
+    padding: 10px;
+    overflow: hidden; /* Prevents layout break due to floats */
+}
+
+#prod{
+    /*
+        1. set display property such a way that it takes 30% width and 340px height and aligns inline like
+    */
+    display: inline-block; /* Using inline-block instead of float for better alignment */
+    vertical-align: top;
+    width: 30%;
+    height: 340px;
+    border: 1px solid #d1d1e0;
+    padding: 20px;
+    box-sizing: border-box; /* Prevents padding from expanding the element's size */
+}
+
+#prodimg{
+    width: 100%;
+    height: 300px;
+}
+
+#proddetails{
+    /*
+        1. set display property such a way that it takes 45% width and aligns inline like
+    */
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    /*
+        1. set the maximum height property to 500px
+        2. make sure when the height exceeds 500px then a scroll bar will be shown
+    */
+    max-height: 500px;
+    overflow: auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#proddetails p.grey{
+    color: #999999;
+}
+
+#othersec{
+    float:right;
+    max-height: 500px;
+    overflow:auto;
+}
+
+#othersec p{
+    color: #999999;
+}
+
+#specification{
+    width:100%;
+    padding: 10px;
+}
+
+#spec-menu{
+    width: 100%;
+    background-color: rgba(255, 128, 0, 0.3);
+    border-collapse: collapse; /* This belongs on the table, not the td */
+}
+
+#spec-menu td{
+    /*
+        1. make sure each td element takes 100px with long size
+        2. set the border to 1px solid #d1d1e0
+        3. make sure double border merges to a single one (done in the table above)
+        4. make sure the contents are aligned to the center of the td
+    */
+    width: 100px;
+    border: 1px solid #d1d1e0;
+    text-align: center;
+}
+
+#spec-menu td a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    color:black;
+}
+
+#spec-menu td a.active{
+    background-color: #33adff;
+    color: floralwhite;
+}
+
+#spec-menu td a:not(.active):hover{
+   background-color: #99ccff;
+    color: floralwhite;
+}
+
+/* ====== Specification Details Table Fix ====== */
+#spec-details{
+    /* set the width of the table to 100% */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darkened background to make white text stand out */
+    border-collapse: collapse; /* Moved from td to table */
+}
+
+/* space details section */
+#spec-details tr:hover{
+    background-color: rgb(64, 64, 64);
+}
+
+/* Set color for both left (th) and right (td) columns */
+#spec-details th, 
+#spec-details td {
+    padding: 10px;
+    border: 1px solid #d1d1e0;
+    color: #ffffff; /* Pure white color (to make the right-side text white) */
+    text-align: left; /* Align text to the left */
+}
+
+/* Added a slightly darker background to the left column (th) to match the expected output */
+#spec-details th {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+#footer{
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    overflow: hidden; /* Clears floats */
+}
+
+/* Footer span section css */
+#footer>span:nth-child(1){
+    padding: 5%;
+    width:30%;
+    color: #c0c0c0; /* You can change this color if you prefer */
+    display:inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+#footer>span:nth-child(2){
+    padding: 2%;
+    width:63%;
+    display:inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+#branch-1{
+    float:left;
+    width: 50%;
+}
+
+#branch-2{
+    float:right;
+    width: 50%;
+}
+
+/* Footer a section css */
+#footer a{
+    text-decoration: none;
+    color: #33adff; /* Added link color for better visibility */
+}
+
+#footer a:hover{
+    color: white;
+}

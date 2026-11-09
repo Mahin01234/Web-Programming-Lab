@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>&lt; &lt; PC WORLD &gt; &gt;</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Style Sheet -->
+    <link rel="stylesheet" href="style_exercise.css">
+
+</head>
+
+<body>
+
+    <!-- Header / Brand Section -->
+    <header id="brand">
+
+        <a href="#">
+            <img src="brand.png"
+                alt="PC World Logo"
+                style="height:100%;">
+        </a>
+
+        <span id="searchbox">
+
+            <input type="search"
+                id="search"
+                placeholder="Search Here"
+                aria-label="Search products">
+
+            <button type="button" id="search-btn">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+
+        </span>
+
+    </header>
+
+
+    <!-- Advertisement Section -->
+    <div id="adv">
+
+        <img src="adv4.jpg"
+            alt="PC World Advertisement">
+
+    </div>
+
+
+    <!-- Navigation Menu -->
+    <nav aria-label="Main navigation">
+
+        <ul id="menubar-list">
+
+            <li><a href="#brand" class="active">Home</a></li>
+            <li><a href="#prod-sec">All Categories</a></li>
+            <li><a href="#prod-sec">Notebook</a></li>
+            <li><a href="#prod-sec">Desktop</a></li>
+            <li><a href="#specification">Software</a></li>
+            <li><a href="#specification">Accessories</a></li>
+            <li><a href="#specification">Monitor</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Product Section -->
+    <main>
+
+        <section id="prod-sec">
+
+            <span id="prod">
+
+                <img src="prod1.jpg"
+                    id="prodimg"
+                    alt="Apple MacBook Pro 2016"
+                    width="300">
+
+            </span>
+
+
+            <!-- Product Details -->
+            <span id="proddetails">
+
+                <h3>
+                    Apple MacBook Pro (2016) Intel Core i5
+                    (2.9-3.3GHz, 8GB 2133MHz, 256GB SSD)
+                    with Touch Bar and Touch ID,
+                    13.3 Inch Retina Display,
+                    Space Gray MacBook
+                    (MLH12ZP/A, MLH12ZA/A, MLH12LL/A)
+                </h3>
+
+                <p class="grey">
+                    Regular Price TK 154,000
+                </p>
+
+                <p>
+                    <b>Special Price TK 148,000</b>
+                </p>
+
+                <p>
+                    Product Id: 33.005.82
+                </p>
+
+                <h4>Quick Overview</h4>
+
+                <p class="grey">
+
+                    Processor - Intel Core i5<br>
+                    Processor Clock Speed - 2.9 to 3.3GHz<br>
+                    Display Size - 13.3<br>
+                    RAM - 8GB<br>
+                    RAM Type - DDR4 2133MHz<br>
+                    Storage - 256GB SSD<br>
+                    Operating System - Mac OS X<br>
+                    Made in/Assemble - China
+
+                </p>
+
+            </span>
+
+
+            <!-- Compare Products -->
+            <aside id="othersec">
+
+                <h4 style="border-bottom: 3px solid green; padding: 5px;">
+                    Compare products
+                </h4>
+
+                <p>You have no items to compare</p>
+
+            </aside>
+
+        </section>
+
+
+        <!-- Specification Section -->
+        <section id="specification">
+
+            <table id="spec-menu">
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <a href="#specification" class="active">
+                                SPECIFICATION
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="#prod-sec">DESCRIPTION</a>
+                        </td>
+
+                        <td>
+                            <a href="#specification">TAGS</a>
+                        </td>
+
+                        <td>
+                            <a href="#footer">REVIEWS</a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <h4 style="color:floralwhite;">
+                Additional Information
+            </h4>
+
+
+            <!-- Specification Details Table -->
+            <table id="spec-details">
+
+                <tbody>
+
+                    <tr>
+                        <th scope="row">Brand</th>
+                        <td>Apple</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Model</th>
+                        <td>Apple MacBook Pro (2016)</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Processor</th>
+                        <td>Intel Core i5</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Clock Speed</th>
+                        <td>2.9-3.3GHz</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Cache</th>
+                        <td>4MB</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Display Type</th>
+                        <td>IPS Retina</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Display Size</th>
+                        <td>13.3"</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Display Resolution</th>
+                        <td>2560x1600 (WxH) WQXGA</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Touch</th>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">RAM Type</th>
+                        <td>DDR4 2133MHz</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">RAM</th>
+                        <td>8GB</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Storage</th>
+                        <td>256GB SSD</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Graphics Chipset</th>
+                        <td>Intel Iris Graphics 550</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Graphics Memory</th>
+                        <td>Shared</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Networking</th>
+                        <td>WiFi, Bluetooth, HD Webcam</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Audio Port</th>
+                        <td>Combo</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">USB Port</th>
+                        <td>Four Thunderbolt 3 (USB-C)</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Battery</th>
+                        <td>Up to 10 Hrs.</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Weight</th>
+                        <td>1.58Kg</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Color</th>
+                        <td>Space Gray</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Operating System</th>
+                        <td>Mac OS</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Others</th>
+                        <td>Touch Bar and Touch ID, 720p FaceTime HD Camera</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Part No</th>
+                        <td>MLH12ZP/A, MLH12ZA/A, MLH12LL/A</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Country of Origin</th>
+                        <td>USA</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Made in/Assemble</th>
+                        <td>China</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Warranty</th>
+                        <td>1 Year</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer id="footer">
+
+        <span>
+            PC World Limited<br>
+            NotunBazar Bhaban, Dhaka, Bangladesh<br>
+            Tel: +8801922181860<br>
+        </span>
+
+
+        <span>
+            <h4 style="color:floralwhite; border-bottom:2px solid green;">
+                Branches
+            </h4>
+
+
+            <!-- Dhaka Branches -->
+            <span id="branch-1">
+                <a href="#">IDB Branch, Dhaka</a><br>
+                <a href="#">Banani, Dhaka</a><br>
+                <a href="#">Uttara, Dhaka</a><br>
+                <a href="#">Elephant Road, Dhaka</a><br>
+                <a href="#">Shantinagar, Dhaka</a>
+
+            </span>
+
+
+            <!-- Other Branches -->
+            <span id="branch-2">
+                <a href="#">Agrabad, Chittagong</a><br>
+                <a href="#">Khulna</a><br>
+                <a href="#">Rajshahi</a><br>
+                <a href="#">Rangpur</a><br>
+                <a href="#">Bogra</a><br>
+                <a href="#">Barisal</a><br>
+                <a href="#">Mymensingh</a><br>
+            </span>
+
+        </span>
+
+    </footer>
+
+</body>
+
+</html>
